@@ -42,6 +42,10 @@ namespace Database
             cmd.ExecuteNonQuery();
             MessageBox.Show("Data has been saved in database");
             con.Close();
+
+            txtID.Text = "";
+            txtName.Text = "";
+            txtSurname.Text = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)
